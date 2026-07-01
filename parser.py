@@ -1,6 +1,7 @@
 import sys
 import os
 
+#file opener and reading function --> NOT PARSER; ONLY OPENS
 def read_file():
 
     if len(sys.argv) < 2:
