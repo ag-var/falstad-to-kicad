@@ -28,4 +28,5 @@ def read_file():
     return lines #returning list-output
 
 if __name__ == "__main__":
+    print(f"Running as a test")
     print(read_file())
