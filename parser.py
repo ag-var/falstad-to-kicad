@@ -16,9 +16,16 @@ def read_file():
 
     try:
         with open(file_name, 'r') as file:
-            print(file.read())
+ #           print(file.read())
+ #           file.seek(0)
+            lines = []
+            for line in file:
+                lines.append(line.strip())
+            
     except:
         pass
 
+    return lines
+
 if __name__ == "__main__":
-    read_file()
+    print(read_file())
