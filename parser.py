@@ -1,7 +1,7 @@
 import sys
 import os
 
-#file opener and reading function --> NOT PARSER; ONLY OPENS
+#file opener and reading function
 def read_file():
 
     if len(sys.argv) < 2:
@@ -25,7 +25,7 @@ def read_file():
     except:
         pass
 
-    return lines
+    return lines #returning list-output
 
 if __name__ == "__main__":
     print(read_file())
